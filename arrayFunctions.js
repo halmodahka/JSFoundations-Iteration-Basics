@@ -40,13 +40,13 @@ function getEvens(numbers) {
  * countOccurences(52, [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52]) -> 3
  */
 function countOccurences(x, numbers) {
-  let n = 0;
-  for(let i = 0; i < numbers.length; i++){
-      if(numbers[i] == x)
-      n++;
-  }
-  return n;
+
+  
+    let count = 0;
+    numbers.forEach((num) => (num === x && count++));
+    return count;
 };
+
 
 /**
  * makeThemDoctors(students):
